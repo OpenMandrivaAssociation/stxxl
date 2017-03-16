@@ -1,0 +1,10 @@
+--- stxxl-1.4.1/lib/CMakeLists.txt.omv~	2017-03-17 00:03:15.690130671 +0100
++++ stxxl-1.4.1/lib/CMakeLists.txt	2017-03-17 00:04:14.269793347 +0100
+@@ -81,6 +81,7 @@ if(BUILD_SHARED_LIBS)
+ 
+   # build stxxl SHARED library and link all programs again it
+   add_library(stxxl SHARED ${LIBSTXXL_SOURCES})
++  target_link_libraries(stxxl pthread)
+   set_target_properties(stxxl PROPERTIES OUTPUT_NAME "${STXXL_LIBNAME}")
+   set_target_properties(stxxl PROPERTIES VERSION "${STXXL_VERSION_STRING}")
+   install(TARGETS stxxl

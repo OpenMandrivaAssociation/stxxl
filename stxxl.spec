@@ -68,7 +68,7 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %cmake -G Ninja \
 	-DINSTALL_LIB_DIR=%{_libdir} \

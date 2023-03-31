@@ -6,7 +6,7 @@
 
 Name: stxxl
 Version: 1.4.1
-Release: 2
+Release: 3
 Source0: https://downloads.sourceforge.net/project/stxxl/stxxl/%{version}/stxxl-%{version}.tar.gz
 Patch0: stxxl-1.4.1-pthread-linkage.patch
 Summary: Standard Template Library for Extra Large Data Sets
